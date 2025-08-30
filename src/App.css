@@ -1,0 +1,67 @@
+.App {
+  border-radius: 30px;
+  border: 3px solid white;
+  height: 97vh;
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  padding: 0 2rem;
+  gap: 2%;
+  z-index: 1000;
+  border-bottom: 5px solid black;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.nav-links {
+  gap: 2vw;
+}
+
+.nav-buttons {
+  gap: 2vw;
+  padding-right: 1rem;
+}
+
+.Logo-name {
+  font-size: 32px;
+}
+
+.right-nav svg {
+  width: calc(0.25rem * 8);
+  height: calc(0.25rem * 8);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  height: 80%;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 1% 5%;
+  display: flex;
+  gap: 2vw;
+  text-align: left;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.card h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 70px;
+  color: color-mix(in srgb, rgb(52, 152, 137) 70%, rgb(209, 159, 21) 30%);
+}

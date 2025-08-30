@@ -1,0 +1,10 @@
+services:
+  frontend:
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app # Mount project for live edits
+      - /app/node_modules # Keep container node_modules separate
+    env_file:
+      - .env # Optional, for environment variables
+    command: npm run dev # Start Vite dev server
